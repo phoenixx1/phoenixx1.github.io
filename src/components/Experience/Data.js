@@ -1,0 +1,66 @@
+import SchoolIcon from "@material-ui/icons/School";
+import WorkIcon from "@material-ui/icons/Work";
+
+export const experience = [
+  {
+    id: 1,
+    type: "work",
+    date: "April 2021 - May 2021",
+    icon: <WorkIcon />,
+    bckgrnd: true,
+    title: "IotIot Pune, Maharashtra",
+    subtitle: "Internship",
+    desc: "Frontend Developer",
+  },
+  {
+    id: 2,
+    type: "work",
+    date: "May 2020 - June 2020",
+    icon: <WorkIcon />,
+    bckgrnd: false,
+    title: "CodeSpeedy Technology Pvt. Ltd. Beldanga, West Bengal",
+    subtitle: "Internship",
+    desc: "C++ Programmer",
+  },
+  {
+    id: 3,
+    type: "work",
+    date: "May 2020 - June 2020",
+    icon: <WorkIcon />,
+    bckgrnd: true,
+    title: "SmartBridge Educational Services Pvt. Ltd. Hyderabad, Telangana",
+    subtitle: "Internship",
+    desc: "Project Internship",
+  },
+  {
+    id: 4,
+    type: "education",
+    date: "July 2017 - July 2021",
+    icon: <SchoolIcon />,
+    bckgrnd: false,
+    title:
+      "NMIMS - Mukesh Patel School of Technology Management & Engineering Shirpur, Maharashtra",
+    subtitle: "B.Tech Computer Science ",
+    desc: "Overall CGPA: 3.35/4",
+  },
+  {
+    id: 5,
+    type: "education",
+    date: "April 2016 - May 2017",
+    icon: <SchoolIcon />,
+    bckgrnd: true,
+    title: "Global Public School Kota, Rajasthan",
+    subtitle: "Senior Secondary Education",
+    desc: "69.60%",
+  },
+  {
+    id: 6,
+    type: "education",
+    date: "April 2014 - May 2015",
+    icon: <SchoolIcon />,
+    bckgrnd: false,
+    title: "Global Public School Kota, Rajasthan",
+    subtitle: "Secondary Education",
+    desc: "90.25%",
+  },
+];

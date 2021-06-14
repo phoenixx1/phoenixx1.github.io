@@ -1,6 +1,10 @@
 import { useState } from "react";
+import About from "./components/About";
+import Experience from "./components/Experience";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +17,10 @@ function App() {
     <div>
       <Navbar toggle={toggle} />
       <HeroSection />
+      <About />
+      <Experience />
+      <Skills />
+      <Projects />
     </div>
   );
 }
