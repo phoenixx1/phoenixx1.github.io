@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/phoenixx1.github.io/static/css/main.8784d120.chunk.css",
+    "main.js": "/phoenixx1.github.io/static/js/main.c436e493.chunk.js",
+    "main.js.map": "/phoenixx1.github.io/static/js/main.c436e493.chunk.js.map",
+    "runtime-main.js": "/phoenixx1.github.io/static/js/runtime-main.0630d734.js",
+    "runtime-main.js.map": "/phoenixx1.github.io/static/js/runtime-main.0630d734.js.map",
+    "static/css/2.2aa38b9c.chunk.css": "/phoenixx1.github.io/static/css/2.2aa38b9c.chunk.css",
+    "static/js/2.0d3d6c9b.chunk.js": "/phoenixx1.github.io/static/js/2.0d3d6c9b.chunk.js",
+    "static/js/2.0d3d6c9b.chunk.js.map": "/phoenixx1.github.io/static/js/2.0d3d6c9b.chunk.js.map",
+    "static/js/3.6d33a1c0.chunk.js": "/phoenixx1.github.io/static/js/3.6d33a1c0.chunk.js",
+    "static/js/3.6d33a1c0.chunk.js.map": "/phoenixx1.github.io/static/js/3.6d33a1c0.chunk.js.map",
+    "index.html": "/phoenixx1.github.io/index.html",
+    "static/css/2.2aa38b9c.chunk.css.map": "/phoenixx1.github.io/static/css/2.2aa38b9c.chunk.css.map",
+    "static/css/main.8784d120.chunk.css.map": "/phoenixx1.github.io/static/css/main.8784d120.chunk.css.map",
+    "static/js/2.0d3d6c9b.chunk.js.LICENSE.txt": "/phoenixx1.github.io/static/js/2.0d3d6c9b.chunk.js.LICENSE.txt",
+    "static/media/amazon.34bd8a46.jpeg": "/phoenixx1.github.io/static/media/amazon.34bd8a46.jpeg",
+    "static/media/covid.d3b9996e.jpeg": "/phoenixx1.github.io/static/media/covid.d3b9996e.jpeg",
+    "static/media/disney.7496c27e.jpeg": "/phoenixx1.github.io/static/media/disney.7496c27e.jpeg",
+    "static/media/facebook.4f037d96.png": "/phoenixx1.github.io/static/media/facebook.4f037d96.png",
+    "static/media/github.a855c397.png": "/phoenixx1.github.io/static/media/github.a855c397.png",
+    "static/media/gmail.a2f2146f.png": "/phoenixx1.github.io/static/media/gmail.a2f2146f.png",
+    "static/media/instagram.75e0546a.png": "/phoenixx1.github.io/static/media/instagram.75e0546a.png",
+    "static/media/lifeexpectancy.2e03c513.png": "/phoenixx1.github.io/static/media/lifeexpectancy.2e03c513.png",
+    "static/media/logo.32c5f57f.png": "/phoenixx1.github.io/static/media/logo.32c5f57f.png",
+    "static/media/profile.9d304d10.jpg": "/phoenixx1.github.io/static/media/profile.9d304d10.jpg",
+    "static/media/video.7fb3f117.mp4": "/phoenixx1.github.io/static/media/video.7fb3f117.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0630d734.js",
+    "static/css/2.2aa38b9c.chunk.css",
+    "static/js/2.0d3d6c9b.chunk.js",
+    "static/css/main.8784d120.chunk.css",
+    "static/js/main.c436e493.chunk.js"
+  ]
+}
