@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  background: "#f9f9f9";
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,12 +45,14 @@ export const Column2 = styled.div`
   padding: 0 15px;
 
   .MuiButton-root {
-    background: #1e3a82;
+    background: #3c74d3;
     padding: 10px;
     font-weight: 600;
 
     :hover {
       background: #ee7e05;
+      color: white;
+      transform: scale(1.01);
     }
   }
 `;

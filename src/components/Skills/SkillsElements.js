@@ -38,6 +38,7 @@ export const AllSkills = styled.div`
 
     :hover {
       color: #2e41cf;
+      background-color: #161824;
       transform: scale(1.02);
     }
   }

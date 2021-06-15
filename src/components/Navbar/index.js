@@ -14,6 +14,8 @@ import {
   NavBtn,
   SocialIcons,
 } from "./NavbarElements";
+import Slide from "react-reveal/Slide";
+
 import Logo from "../../images/logo.png";
 
 function Navbar({ toggle }) {
@@ -45,84 +47,88 @@ function Navbar({ toggle }) {
         </MobileIcon>
 
         <NavMenu>
-          <NavItem>
-            <NavLinks
-              to="about"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-            >
-              About
-            </NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks
-              to="experience"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-            >
-              Experience
-            </NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks
-              to="skills"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-            >
-              Skills
-            </NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks
-              to="projects"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-            >
-              Projects
-            </NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks
-              to="contact"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-            >
-              Contact Me
-            </NavLinks>
-          </NavItem>
+          <Slide top>
+            <NavItem>
+              <NavLinks
+                to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                About
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="experience"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Experience
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="skills"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Skills
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="projects"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Projects
+              </NavLinks>
+            </NavItem>
+            {/* <NavItem>
+              <NavLinks
+                to="contact"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Contact Me
+              </NavLinks>
+            </NavItem> */}
+          </Slide>
         </NavMenu>
 
         <SocialIcons>
-          <NavBtn href="https://github.com/phoenixx1" target="_blank">
-            <FaGithub />
-          </NavBtn>
-          <NavBtn
-            href="https://www.linkedin.com/in/nishant-saxena-2609/"
-            target="_blank"
-          >
-            <FaLinkedin />
-          </NavBtn>
-          <NavBtn
-            href="https://github.com/phoenixx1/phoenixx1.github.io"
-            target="_blank"
-          >
-            <AiOutlineFork />
-          </NavBtn>
+          <Slide bottom>
+            <NavBtn href="https://github.com/phoenixx1" target="_blank">
+              <FaGithub />
+            </NavBtn>
+            <NavBtn
+              href="https://www.linkedin.com/in/nishant-saxena-2609/"
+              target="_blank"
+            >
+              <FaLinkedin />
+            </NavBtn>
+            <NavBtn
+              href="https://github.com/phoenixx1/phoenixx1.github.io"
+              target="_blank"
+            >
+              <AiOutlineFork />
+            </NavBtn>
+          </Slide>
         </SocialIcons>
       </NavbarContainer>
     </Nav>

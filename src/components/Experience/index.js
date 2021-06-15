@@ -6,11 +6,14 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { experience } from "./Data";
 import { ExperienceContainer, Heading } from "./ExperienceElements";
+import Zoom from "react-reveal/Zoom";
 
 function Experience() {
   return (
     <ExperienceContainer id="experience">
-      <Heading>EXPERIENCE & EDUCATION</Heading>
+      <Heading>
+        <Zoom>EXPERIENCE & EDUCATION</Zoom>
+      </Heading>
       <VerticalTimeline>
         {experience.map((values) => (
           <VerticalTimelineElement

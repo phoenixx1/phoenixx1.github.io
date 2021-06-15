@@ -12,23 +12,29 @@ import {
   SiStyledComponents,
   SiBootstrap,
 } from "react-icons/si";
+import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 function Skills() {
   return (
     <SkillsContainer id="skills">
-      <Heading>SKILLS</Heading>
-      <AllSkills>
-        <SiCplusplus />
-        <SiPython />
-        <SiHtml5 />
-        <SiCss3 />
-        <SiJavascript />
-        <SiReact />
-        <SiNodeDotJs />
-        <SiStyledComponents />
-        <SiBootstrap />
-        <SiFirebase />
-      </AllSkills>
+      <Heading>
+        <Zoom>SKILLS</Zoom>
+      </Heading>
+      <Fade right>
+        <AllSkills>
+          <SiCplusplus />
+          <SiPython />
+          <SiHtml5 />
+          <SiCss3 />
+          <SiJavascript />
+          <SiReact />
+          <SiNodeDotJs />
+          <SiStyledComponents />
+          <SiBootstrap />
+          <SiFirebase />
+        </AllSkills>
+      </Fade>
     </SkillsContainer>
   );
 }

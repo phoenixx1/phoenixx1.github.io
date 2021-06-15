@@ -1,12 +1,12 @@
-import SchoolIcon from "@material-ui/icons/School";
-import WorkIcon from "@material-ui/icons/Work";
+import { FaSchool } from "react-icons/fa";
+import { MdSchool, MdWork } from "react-icons/md";
 
 export const experience = [
   {
     id: 1,
     type: "work",
     date: "April 2021 - May 2021",
-    icon: <WorkIcon />,
+    icon: <MdWork />,
     bckgrnd: true,
     title: "IotIot Pune, Maharashtra",
     subtitle: "Internship",
@@ -16,7 +16,7 @@ export const experience = [
     id: 2,
     type: "work",
     date: "May 2020 - June 2020",
-    icon: <WorkIcon />,
+    icon: <MdWork />,
     bckgrnd: false,
     title: "CodeSpeedy Technology Pvt. Ltd. Beldanga, West Bengal",
     subtitle: "Internship",
@@ -26,7 +26,7 @@ export const experience = [
     id: 3,
     type: "work",
     date: "May 2020 - June 2020",
-    icon: <WorkIcon />,
+    icon: <MdWork />,
     bckgrnd: true,
     title: "SmartBridge Educational Services Pvt. Ltd. Hyderabad, Telangana",
     subtitle: "Internship",
@@ -36,7 +36,7 @@ export const experience = [
     id: 4,
     type: "education",
     date: "July 2017 - July 2021",
-    icon: <SchoolIcon />,
+    icon: <MdSchool />,
     bckgrnd: false,
     title:
       "NMIMS - Mukesh Patel School of Technology Management & Engineering Shirpur, Maharashtra",
@@ -47,7 +47,7 @@ export const experience = [
     id: 5,
     type: "education",
     date: "April 2016 - May 2017",
-    icon: <SchoolIcon />,
+    icon: <FaSchool />,
     bckgrnd: true,
     title: "Global Public School Kota, Rajasthan",
     subtitle: "Senior Secondary Education",
@@ -57,7 +57,7 @@ export const experience = [
     id: 6,
     type: "education",
     date: "April 2014 - May 2015",
-    icon: <SchoolIcon />,
+    icon: <FaSchool />,
     bckgrnd: false,
     title: "Global Public School Kota, Rajasthan",
     subtitle: "Secondary Education",
