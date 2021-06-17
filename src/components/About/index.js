@@ -30,13 +30,14 @@ function About() {
         <Column2>
           <Fade bottom>
             <Subtitle>
-              Kuch to acha aasdsdasdasadsadchKuch to acha aasdsdasdasadsadchKuch
-              to acha aasdsdasdasadsadchKuch to acha aasdsdasdasadsadchKuch to
-              acha aasdsdasdasadsadchKuch to acha aasdsdasdasadsadcha
+              I am a Computer Engineer with an affinity for C++ and ReactJS, a
+              passionate person when it comes to working and my goal is to
+              expand my skills and knowledge in Web Development, I am a hard
+              worker and eager to learn to make a valuable asset in any team.
             </Subtitle>
 
             <Button
-              href="https://drive.google.com/file/d/1MoOr8IXLwCF1Sh1q2g9CPoYDR4RFsZ3C/view?usp=sharing"
+              href="https://drive.google.com/file/d/1a8OEERo6VZbneOW52PRN19rJ34k89_ZI/view?usp=sharing"
               target="__blank"
             >
               RESUME

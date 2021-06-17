@@ -5,7 +5,7 @@ export const experience = [
   {
     id: 1,
     type: "work",
-    date: "April 2021 - May 2021",
+    date: "February 2021 - May 2021",
     icon: <MdWork />,
     bckgrnd: true,
     title: "IotIot Pune, Maharashtra",

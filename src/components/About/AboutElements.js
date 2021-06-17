@@ -58,7 +58,7 @@ export const Column2 = styled.div`
 `;
 
 export const Subtitle = styled.p`
-  max-width: 440px;
+  max-width: 500px;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
