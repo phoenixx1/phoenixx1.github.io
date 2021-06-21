@@ -1,14 +1,53 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
-  background: #000080;
+  background: hsla(223, 62%, 31%, 1);
+
+  background: linear-gradient(
+    315deg,
+    hsla(223, 62%, 31%, 1) 7%,
+    hsla(224, 61%, 33%, 1) 23%,
+    hsla(225, 55%, 39%, 1) 45%,
+    hsla(228, 50%, 49%, 1) 66%,
+    hsla(229, 62%, 57%, 1) 81%,
+    hsla(230, 90%, 68%, 1) 98%
+  );
+
+  background: -moz-linear-gradient(
+    315deg,
+    hsla(223, 62%, 31%, 1) 7%,
+    hsla(224, 61%, 33%, 1) 23%,
+    hsla(225, 55%, 39%, 1) 45%,
+    hsla(228, 50%, 49%, 1) 66%,
+    hsla(229, 62%, 57%, 1) 81%,
+    hsla(230, 90%, 68%, 1) 98%
+  );
+
+  background: -webkit-linear-gradient(
+    315deg,
+    hsla(223, 62%, 31%, 1) 7%,
+    hsla(224, 61%, 33%, 1) 23%,
+    hsla(225, 55%, 39%, 1) 45%,
+    hsla(228, 50%, 49%, 1) 66%,
+    hsla(229, 62%, 57%, 1) 81%,
+    hsla(230, 90%, 68%, 1) 98%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1E3A82", endColorstr="#213D87", GradientType=1 );
+
+  font-family: "Roboto Slab", serif;
+
+  letter-spacing: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 30px;
-  height: 935px;
+  /* height: 935px; */
+  height: 100vh;
+  width: 100%;
+
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
 
   :before {
     content: "";
@@ -18,6 +57,18 @@ export const HeroContainer = styled.div`
     bottom: 0;
     right: 0;
     z-index: 2;
+  }
+`;
+
+export const HomeElement = styled.img`
+  width: 550px;
+
+  @media screen and (max-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 350px;
   }
 `;
 
@@ -42,18 +93,18 @@ export const VideoBg = styled.video`
 
 export const HeroContent = styled.div`
   z-index: 3;
-  max-width: 1200px;
+  width: 100%;
   position: absolute;
   display: flex;
   padding: 8px 24px;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-around;
 `;
 
 export const HeroH1 = styled.h1`
   color: #fff;
-  font-size: 48px;
-  text-align: center;
+  font-size: 70px;
+  text-align: left;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -66,10 +117,12 @@ export const HeroH1 = styled.h1`
 
 export const HeroP = styled.p`
   margin-top: 24px;
+  height: 40px;
   color: #fff;
-  font-size: 24px;
-  text-align: center;
-  max-width: 600px;
+  font-size: 25px;
+  text-align: left;
+  width: 600px;
+  max-width: 700px;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
@@ -77,5 +130,59 @@ export const HeroP = styled.p`
 
   @media screen and (max-width: 480px) {
     font-size: 18px;
+  }
+`;
+
+export const SocialIcons = styled.div`
+  display: flex;
+`;
+
+export const NavBtn = styled.a`
+  cursor: pointer;
+  padding: 8px;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+  /* background: var(--bgColor); */
+
+  img {
+    width: 40px;
+    cursor: pointer;
+
+    :hover {
+      transform: scale(1.05);
+      filter: brightness(150%);
+    }
+  }
+`;
+
+export const ResumeSection = styled.div`
+  display: flex;
+  letter-spacing: 0rem;
+  align-items: center;
+  font-size: 1.3rem;
+  justify-content: space-between;
+  width: 220px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 50px;
+
+  span {
+    margin-left: 10px;
+  }
+
+  a {
+    padding: 10px 10px;
+    background-color: #e17605;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    * {
+      color: white;
+      font-size: 1.6rem;
+    }
+    :hover {
+      filter: brightness(120%);
+    }
   }
 `;

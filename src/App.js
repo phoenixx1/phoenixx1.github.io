@@ -1,5 +1,5 @@
 import { useState } from "react";
-import About from "./components/About";
+import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
@@ -18,10 +18,10 @@ function App() {
     <div>
       <Navbar toggle={toggle} />
       <HeroSection />
-      <About />
-      <Experience />
       <Skills />
+      <Experience />
       <Projects />
+      <Contact />
       <Footer />
     </div>
   );

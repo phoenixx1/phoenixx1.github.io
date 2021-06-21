@@ -1,5 +1,7 @@
 import React from "react";
-import { SiReact } from "react-icons/si";
+import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
+import { GoRepo } from "react-icons/go";
 import { Button } from "@material-ui/core";
 
 import {
@@ -7,14 +9,14 @@ import {
   Heading,
   AllProject,
   Project,
-  PrjImg,
+  ProjectDesc,
   PrjTitle,
   Stacks,
   SourceButtons,
+  PrjDetails,
+  MoreButton,
 } from "./ProjectsElements";
 import { projects } from "./Data";
-import Zoom from "react-reveal/Zoom";
-import Fade from "react-reveal/Fade";
 
 function Projects() {
   return (
@@ -25,29 +27,40 @@ function Projects() {
 
       <AllProject>
         {projects.map((values) => (
-          <Fade top={values.top} bottom={values.bottom}>
+          <Fade top>
             <Project id={values.id}>
-              <PrjImg src={values.img} />
+              <PrjTitle>
+                <GoRepo />
+                {values.title}
+              </PrjTitle>
 
-              <PrjTitle>{values.title}</PrjTitle>
-              <Stacks>
-                {values.stacks.map((stack) => (
-                  <>{stack}</>
-                ))}
-              </Stacks>
+              <ProjectDesc>{values.desc}</ProjectDesc>
 
-              <SourceButtons>
-                <Button href={values.source} target="_blank">
-                  Source
-                </Button>
-                <Button href={values.demo} target="_blank">
-                  Demo
-                </Button>
-              </SourceButtons>
+              <PrjDetails>
+                <SourceButtons>
+                  <Button href={values.source} target="_blank">
+                    Source
+                  </Button>
+                  <Button href={values.demo} target="_blank">
+                    Demo
+                  </Button>
+                </SourceButtons>
+                <Stacks>
+                  {values.stacks.map((stack) => (
+                    <>{stack}</>
+                  ))}
+                </Stacks>
+              </PrjDetails>
             </Project>
           </Fade>
         ))}
       </AllProject>
+      <MoreButton
+        href="https://github.com/phoenixx1?tab=repositories"
+        target="_blank"
+      >
+        More Projects
+      </MoreButton>
     </ProjectsContainer>
   );
 }

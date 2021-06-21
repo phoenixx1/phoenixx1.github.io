@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? "#1E3A82" : "transparent")};
+  background: #1e3a82;
+  /* ${({ scrollNav }) => (scrollNav ? "#1E3A82" : "transparent")}; */
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -13,6 +14,13 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   overflow: hidden;
+  opacity: ${({ scrollNav }) => (scrollNav ? 1 : 0)};
+
+  box-shadow: -1px 7px 9px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -1px 7px 9px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -1px 7px 9px 1px rgba(0, 0, 0, 0.2);
+
+  transition: all 0.5s ease-in-out;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -78,6 +86,7 @@ export const NavLinks = styled(Link)`
 
   :hover {
     color: #000;
+    background-color: #224191;
   }
 
   &.active {
@@ -87,24 +96,20 @@ export const NavLinks = styled(Link)`
   }
 `;
 
-export const SocialIcons = styled.div`
+export const NavBtn = styled.a`
+  cursor: pointer;
   padding: 10px 22px;
   display: flex;
   align-items: center;
-  font-size: 1.8rem;
+  justify-content: center;
 
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`;
+  img {
+    border-radius: 50%;
+    width: 30px;
+    padding: 15px;
 
-export const NavBtn = styled.a`
-  color: #fff;
-  cursor: pointer;
-  padding: 0px 10px;
-  transition: all 0.2s ease-in-out;
-
-  :hover {
-    color: #000;
+    :hover {
+      background-color: #224191;
+    }
   }
 `;

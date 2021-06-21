@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { FaBars, FaGithub, FaLinkedin } from "react-icons/fa";
-import { AiOutlineFork } from "react-icons/ai";
+import { FaBars } from "react-icons/fa";
 
 import {
   Nav,
@@ -12,25 +11,26 @@ import {
   NavItem,
   NavLinks,
   NavBtn,
-  SocialIcons,
 } from "./NavbarElements";
 import Slide from "react-reveal/Slide";
+import fork from "../../images/fork.svg";
 
 import Logo from "../../images/logo.png";
 
 function Navbar({ toggle }) {
-  const [scrollNav, setScrollNav] = useState(false);
-
-  const changeNav = () => {
-    if (window.scrollY >= 80) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
-  };
+  const [scrollNav, setScrollNav] = useState(true);
 
   useEffect(() => {
-    window.addEventListener("scroll", changeNav);
+    var prevScrollpos = window.pageYOffset;
+    window.addEventListener("scroll", function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        setScrollNav(true);
+      } else {
+        setScrollNav(false);
+      }
+      prevScrollpos = currentScrollPos;
+    });
   }, []);
 
   const toggleHome = () => {
@@ -47,89 +47,76 @@ function Navbar({ toggle }) {
         </MobileIcon>
 
         <NavMenu>
-          <Slide top>
-            <NavItem>
-              <NavLinks
-                to="about"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                About
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="experience"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Experience
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="skills"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Skills
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="projects"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Projects
-              </NavLinks>
-            </NavItem>
-            {/* <NavItem>
-              <NavLinks
-                to="contact"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Contact Me
-              </NavLinks>
-            </NavItem> */}
-          </Slide>
-        </NavMenu>
+          <NavItem>
+            <NavLinks
+              to="home"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+            >
+              Home
+            </NavLinks>
+          </NavItem>
+          <NavItem>
+            <NavLinks
+              to="skills"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+            >
+              Skills
+            </NavLinks>
+          </NavItem>
 
-        <SocialIcons>
-          <Slide bottom>
-            <NavBtn href="https://github.com/phoenixx1" target="_blank">
-              <FaGithub />
-            </NavBtn>
-            <NavBtn
-              href="https://www.linkedin.com/in/nishant-saxena-2609/"
-              target="_blank"
+          <NavItem>
+            <NavLinks
+              to="experience"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
             >
-              <FaLinkedin />
-            </NavBtn>
-            <NavBtn
-              href="https://github.com/phoenixx1/phoenixx1.github.io"
-              target="_blank"
+              Experience
+            </NavLinks>
+          </NavItem>
+
+          <NavItem>
+            <NavLinks
+              to="projects"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
             >
-              <AiOutlineFork />
-            </NavBtn>
-          </Slide>
-        </SocialIcons>
+              Projects
+            </NavLinks>
+          </NavItem>
+          <NavItem>
+            <NavLinks
+              to="contact"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+            >
+              Contact Me
+            </NavLinks>
+          </NavItem>
+
+          <NavBtn
+            href="https://github.com/phoenixx1/phoenixx1.github.io"
+            target="_blank"
+          >
+            <img src={fork} alt="" />
+          </NavBtn>
+        </NavMenu>
       </NavbarContainer>
     </Nav>
   );
