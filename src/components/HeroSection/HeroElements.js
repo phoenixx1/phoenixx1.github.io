@@ -41,7 +41,6 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 935px; */
   height: 100vh;
   width: 100%;
 
@@ -63,32 +62,12 @@ export const HeroContainer = styled.div`
 export const HomeElement = styled.img`
   width: 550px;
 
-  @media screen and (max-width: 768px) {
-    width: 450px;
+  @media screen and (max-width: 1180px) {
+    width: 400px;
   }
-
-  @media screen and (max-width: 480px) {
-    width: 350px;
+  @media screen and (max-width: 930px) {
+    display: none;
   }
-`;
-
-export const HeroBg = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-`;
-
-export const VideoBg = styled.video`
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  background: #232a34;
 `;
 
 export const HeroContent = styled.div`
@@ -106,12 +85,19 @@ export const HeroH1 = styled.h1`
   font-size: 70px;
   text-align: left;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1180px) {
     font-size: 40px;
   }
-
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
+  @media screen and (max-width: 930px) {
+    font-size: 60px;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 40px;
+    letter-spacing: 0.3rem;
+  }
+  @media screen and (max-width: 365px) {
+    font-size: 45px;
+    letter-spacing: 0.1rem;
   }
 `;
 
@@ -124,12 +110,23 @@ export const HeroP = styled.p`
   width: 600px;
   max-width: 700px;
 
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
+  @media screen and (max-width: 1180px) {
+    font-size: 16px;
+    width: 500px;
   }
-
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 930px) {
+    font-size: 20px;
+    width: 600px;
+  }
+  @media screen and (max-width: 600px) {
     font-size: 18px;
+    width: 350px;
+    letter-spacing: 0.3rem;
+  }
+  @media screen and (max-width: 365px) {
+    font-size: 18px;
+    width: 300px;
+    letter-spacing: 0.1rem;
   }
 `;
 

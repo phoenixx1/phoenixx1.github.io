@@ -40,10 +40,6 @@ export const AboutContainer = styled.div`
   /* height: 635px; */
   overflow-x: hidden;
   width: 100%;
-
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
-  }
 `;
 
 export const AboutWrapper = styled.div`
@@ -56,6 +52,10 @@ export const AboutWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 25px;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const Column1 = styled.div`
@@ -75,6 +75,19 @@ export const Column1 = styled.div`
     justify-content: space-between;
     width: 150px;
   }
+
+  @media screen and (max-width: 700px) {
+    .location,
+    .sub {
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .location,
+    .sub {
+      font-size: 12px;
+    }
+  }
 `;
 
 export const Column2 = styled.div`
@@ -86,6 +99,13 @@ export const Column2 = styled.div`
     padding-right: 0;
     border-radius: 50%;
     border: 5px solid #fff;
+
+    @media screen and (max-width: 940px) {
+      width: 250px;
+    }
+    @media screen and (max-width: 350px) {
+      width: 200px;
+    }
   }
 `;
 
@@ -96,8 +116,11 @@ export const Heading = styled.h1`
   font-weight: 600;
   color: #ee7e05;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 770px) {
     font-size: 32px;
+  }
+  @media screen and (max-width: 350px) {
+    font-size: 28px;
   }
 `;
 
@@ -105,6 +128,15 @@ export const Subtitle = styled.p`
   font-size: 18px;
   max-width: 800px;
   color: "#010606";
+  @media screen and (max-width: 940px) {
+    text-align: justify;
+  }
+  @media screen and (max-width: 770px) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: 350px) {
+    font-size: 13px;
+  }
 `;
 
 export const SocialIcons = styled.div`
@@ -122,6 +154,9 @@ export const NavBtn = styled.a`
   img {
     width: 40px;
     cursor: pointer;
+    @media screen and (max-width: 770px) {
+      width: 30px;
+    }
 
     :hover {
       transform: scale(1.05);

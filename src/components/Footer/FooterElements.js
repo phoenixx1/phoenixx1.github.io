@@ -15,21 +15,15 @@ export const FooterContainer = styled.div`
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
-  }
-`;
 
-export const NavBtn = styled.a`
-  cursor: pointer;
-  padding: 0px 10px;
-  transition: all 0.2s ease-in-out;
-
-  img {
-    width: 30px;
-    padding: 0px 20px;
-    cursor: pointer;
-
-    :hover {
-      filter: brightness(150%);
+    @media screen and (max-width: 700px) {
+      font-size: 1.1rem;
+    }
+    @media screen and (max-width: 350px) {
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 300px) {
+      font-size: 0.6rem;
     }
   }
 `;

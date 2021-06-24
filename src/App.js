@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
+import Sidebar from "./components/Sidebar";
 import Skills from "./components/Skills";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div>
+      <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
       <Skills />

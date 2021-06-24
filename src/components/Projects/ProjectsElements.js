@@ -49,6 +49,10 @@ export const Project = styled.div`
     -moz-box-shadow: 10px 10px 26px -8px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 26px -8px rgba(0, 0, 0, 0.75);
   }
+
+  @media screen and (max-width: 460px) {
+    width: 300px;
+  }
 `;
 
 export const PrjTitle = styled.h2`
