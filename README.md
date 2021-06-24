@@ -2,7 +2,9 @@
 To view a live example, [click here](https://phoenixx1.github.io/).
 
 ## A clean, and responsive portfolio template for Developers!
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/44865935/122817621-c17dce00-d2f5-11eb-8d24-f7710af800c1.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/44865935/122817621-c17dce00-d2f5-11eb-8d24-f7710af800c1.gif)  
+<!-- ![ezgif com-gif-maker](https://user-images.githubusercontent.com/44865935/123323309-f2a70a00-d552-11eb-95cb-09444d3f6a06.gif)   -->
+<img src="https://user-images.githubusercontent.com/44865935/123323309-f2a70a00-d552-11eb-95cb-09444d3f6a06.gif" width="250" height="500"/>
 
 You can change index.js files to your personal details.  
 
