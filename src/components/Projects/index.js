@@ -16,7 +16,7 @@ import {
   PrjDetails,
   MoreButton,
 } from "./ProjectsElements";
-import { projects } from "./Data";
+import { projects } from "../../Data";
 
 function Projects() {
   return (

@@ -21,6 +21,13 @@ import gmail from "../../images/gmail.png";
 import instagram from "../../images/instagram.png";
 import linkedin from "../../images/linkedin.png";
 import facebook from "../../images/facebook.png";
+import {
+  fbURL,
+  githubURL,
+  instagramURL,
+  linkedinURL,
+  mailtoURL,
+} from "../../Data";
 
 function Contact() {
   return (
@@ -49,28 +56,19 @@ function Contact() {
             </span>
 
             <SocialIcons>
-              <NavBtn href="https://github.com/phoenixx1" target="_blank">
+              <NavBtn href={githubURL} target="_blank">
                 <img src={github} alt="" />
               </NavBtn>
-              <NavBtn
-                href="https://www.linkedin.com/in/nishant-saxena-2609/"
-                target="_blank"
-              >
+              <NavBtn href={linkedinURL} target="_blank">
                 <img src={linkedin} alt="" />
               </NavBtn>
-              <NavBtn href="mailto:nishantsaxena269@gmail.com" target="_blank">
+              <NavBtn href={mailtoURL} target="_blank">
                 <img src={gmail} alt="" />
               </NavBtn>
-              <NavBtn
-                href="https://www.instagram.com/nishant_21_/"
-                target="_blank"
-              >
+              <NavBtn href={instagramURL} target="_blank">
                 <img src={instagram} alt="" />
               </NavBtn>
-              <NavBtn
-                href="https://www.facebook.com/N.S.T.G.21"
-                target="_blank"
-              >
+              <NavBtn href={fbURL} target="_blank">
                 <img src={facebook} alt="" />
               </NavBtn>
             </SocialIcons>

@@ -1,4 +1,7 @@
 import React from "react";
+import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
+
 import {
   SkillsContainer,
   Heading,
@@ -8,29 +11,8 @@ import {
   SkillIcon,
   SubPart,
 } from "./SkillsElements";
-import {
-  SiCplusplus,
-  SiCss3,
-  SiFirebase,
-  SiHtml5,
-  SiJavascript,
-  SiPython,
-  SiReact,
-  SiStyledComponents,
-  SiBootstrap,
-  SiPostman,
-  SiC,
-  SiGit,
-  SiMongodb,
-  SiHeroku,
-  SiRedux,
-} from "react-icons/si";
-import { DiMysql, DiSass } from "react-icons/di";
-
-import { FaNode } from "react-icons/fa";
-import Zoom from "react-reveal/Zoom";
-import Fade from "react-reveal/Fade";
 import skillElement from "../../images/5.gif";
+import { BackendTools, FrontendTools, Languages } from "../../Data";
 
 function Skills() {
   return (
@@ -43,84 +25,30 @@ function Skills() {
           <SkillIcons>
             Languages
             <SubPart>
-              <SkillIcon>
-                <SiC className="icon" />
-                <p>C</p>
-              </SkillIcon>
-              <SkillIcon>
-                <SiCplusplus className="icon" />
-                <p>C++</p>
-              </SkillIcon>
-              <SkillIcon>
-                <SiPython className="icon" />
-                <p>Python</p>
-              </SkillIcon>
-              <SkillIcon>
-                <SiJavascript className="icon" />
-                <p>Javascript</p>
-              </SkillIcon>
+              {Languages.map((data) => (
+                <SkillIcon>
+                  {data.icon}
+                  <p>{data.name}</p>
+                </SkillIcon>
+              ))}
             </SubPart>
             Frontend Tools
             <SubPart>
-              <SkillIcon>
-                <SiHtml5 className="icon" />
-                <p>HTML5</p>
-              </SkillIcon>
-              <SkillIcon>
-                <SiCss3 className="icon" />
-                <p>Css3</p>
-              </SkillIcon>
-              <SkillIcon>
-                <SiReact className="icon" />
-                <p>ReactJS</p>
-              </SkillIcon>
-              <SkillIcon>
-                <SiStyledComponents className="icon" />
-                <p>Styled-components</p>
-              </SkillIcon>
-              <SkillIcon>
-                <DiSass className="icon" />
-                <p>Sass</p>
-              </SkillIcon>
-              <SkillIcon>
-                <SiRedux className="icon" />
-                <p>Redux</p>
-              </SkillIcon>
-              <SkillIcon>
-                <SiBootstrap className="icon" />
-                <p>Bootstrap</p>
-              </SkillIcon>
+              {FrontendTools.map((data) => (
+                <SkillIcon>
+                  {data.icon}
+                  <p>{data.name}</p>
+                </SkillIcon>
+              ))}
             </SubPart>
             Backend Tools
             <SubPart>
-              <SkillIcon>
-                <FaNode className="icon" />
-                <p>Node.JS</p>
-              </SkillIcon>
-              <SkillIcon>
-                <SiFirebase className="icon" />
-                <p>Firebase</p>
-              </SkillIcon>
-              <SkillIcon>
-                <SiHeroku className="icon" />
-                <p>Heroku</p>
-              </SkillIcon>
-              <SkillIcon>
-                <DiMysql className="icon" />
-                <p>MySQL</p>
-              </SkillIcon>
-              <SkillIcon>
-                <SiMongodb className="icon" />
-                <p>MongoDB</p>
-              </SkillIcon>
-              <SkillIcon>
-                <SiPostman className="icon" />
-                <p>Postman</p>
-              </SkillIcon>
-              <SkillIcon>
-                <SiGit className="icon" />
-                <p>Git</p>
-              </SkillIcon>
+              {BackendTools.map((data) => (
+                <SkillIcon>
+                  {data.icon}
+                  <p>{data.name}</p>
+                </SkillIcon>
+              ))}
             </SubPart>
           </SkillIcons>
 
