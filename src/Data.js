@@ -14,6 +14,7 @@ import {
   SiMongodb,
   SiHeroku,
   SiRedux,
+  SiGithub,
 } from "react-icons/si";
 import { DiMysql, DiSass } from "react-icons/di";
 import { FaNode } from "react-icons/fa";
@@ -221,7 +222,7 @@ export const projects = [
     id: 1,
     title: "dev-portfolio",
     desc: "Personal dev portfolio build using ReactJS.",
-    stacks: [<SiReact />, <SiStyledComponents />],
+    stacks: [<SiReact />, <SiStyledComponents />, <SiGithub />],
     source:
       "https://github.com/phoenixx1/website-clones/tree/master/amazon-clone",
     demo: "https://clone-4234e.web.app/",
@@ -266,5 +267,13 @@ export const projects = [
     source:
       "https://github.com/phoenixx1/website-clones/tree/master/disney-clone",
     demo: "https://disney-clone-dca88.web.app/home",
+  },
+  {
+    id: 6,
+    title: "HTML Code Editor",
+    desc: "HTML Code editor, editor build using Ace-editor having dark-mode, theme option and variable font-size for code editor.",
+    stacks: [<SiReact />, <SiStyledComponents />, <SiGithub />],
+    source: "https://github.com/phoenixx1/html-code-editor",
+    demo: "https://phoenixx1.github.io/html-code-editor/",
   },
 ];
