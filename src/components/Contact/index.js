@@ -21,12 +21,14 @@ import gmail from "../../images/gmail.png";
 import instagram from "../../images/instagram.png";
 import linkedin from "../../images/linkedin.png";
 import facebook from "../../images/facebook.png";
+import medium from "../../images/medium.png";
 import {
   fbURL,
   githubURL,
   instagramURL,
   linkedinURL,
   mailtoURL,
+  mediumURL,
 } from "../../Data";
 
 function Contact() {
@@ -64,6 +66,9 @@ function Contact() {
               </NavBtn>
               <NavBtn href={mailtoURL} target="_blank">
                 <img src={gmail} alt="" />
+              </NavBtn>
+              <NavBtn href={mediumURL} target="_blank">
+                <img src={medium} alt="" />
               </NavBtn>
               <NavBtn href={instagramURL} target="_blank">
                 <img src={instagram} alt="" />

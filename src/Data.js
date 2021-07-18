@@ -15,6 +15,7 @@ import {
   SiHeroku,
   SiRedux,
   SiGithub,
+  SiTypescript,
 } from "react-icons/si";
 import { DiMysql, DiSass } from "react-icons/di";
 import { FaNode } from "react-icons/fa";
@@ -49,6 +50,8 @@ export const fbURL = "https://www.facebook.com/N.S.T.G.21";
 
 export const instagramURL = "https://www.instagram.com/nishant_21_/";
 
+export const mediumURL = "https://medium.com/@nishantsaxena269";
+
 export const resumeURL =
   "https://drive.google.com/file/d/1a8OEERo6VZbneOW52PRN19rJ34k89_ZI/view?usp=sharing";
 
@@ -70,6 +73,10 @@ export const Languages = [
   {
     icon: <SiJavascript className="icon" />,
     name: "Javascript",
+  },
+  {
+    icon: <SiTypescript className="icon" />,
+    name: "Typescript",
   },
 ];
 

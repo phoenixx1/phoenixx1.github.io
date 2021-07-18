@@ -18,12 +18,14 @@ import github from "../../images/github.png";
 import gmail from "../../images/gmail.png";
 import linkedin from "../../images/linkedin.png";
 import facebook from "../../images/facebook.png";
+import medium from "../../images/medium.png";
 import {
   fbURL,
   githubURL,
   linkedinURL,
   mailtoURL,
   MainSkills,
+  mediumURL,
   Name,
   resumeURL,
 } from "../../Data";
@@ -50,6 +52,9 @@ function HeroSection() {
               </NavBtn>
               <NavBtn href={mailtoURL} target="_blank">
                 <img src={gmail} alt="" />
+              </NavBtn>
+              <NavBtn href={mediumURL} target="_blank">
+                <img src={medium} alt="" />
               </NavBtn>
               <NavBtn href={fbURL} target="_blank">
                 <img src={facebook} alt="" />
