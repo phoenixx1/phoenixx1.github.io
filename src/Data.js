@@ -220,6 +220,23 @@ export const experience = [
       "Worked on Backend to connect NodeJS to C++.",
     ],
   },
+  {
+    id: 7,
+    type: "work",
+    date: "July 2021 - Present",
+    icon: <MdWork />,
+    bckgrnd: false,
+    title: "Piramal Capital & Housing Finance, Kurla Mumbai",
+    subtitle: "Full-time",
+    desc: "Graduate Engineer Trainee",
+    workdesc: [
+      "Working in API Development.",
+      "Basic development using Drupal.",
+      "Developing Python programs for processing the api data and making required changes.",
+      "Using ELK Stack to monitor logs for different usecase.",
+      "Using Kafka for data streaming from different sources and processing them.",
+    ],
+  },
 ];
 
 // Projects
