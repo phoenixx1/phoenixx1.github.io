@@ -222,7 +222,7 @@ export const experience = [
     {
         id: 7,
         type: "work",
-        date: "July 2021 - Present",
+        date: "July 2021 - July 2022",
         icon: <MdWork />,
         bckgrnd: false,
         title: "Piramal Capital & Housing Finance, Kurla Mumbai",
@@ -234,6 +234,20 @@ export const experience = [
             "Deployed API via CI/CD (Python and NodeJS)",
             "Anomaly Detection & Ticket Automation on API Logs (Python, Elasticsearch, Kafka, MongoDB).",
             "Deploy code on AWS Lambda and EC2, also creating an API using API Gateway (Python, FastAPI, NodeJS)",
+        ],
+    },
+    {
+        id: 7,
+        type: "work",
+        date: "July 2022 - Present",
+        icon: <MdWork />,
+        bckgrnd: true,
+        title: "Piramal Capital & Housing Finance, Kurla Mumbai",
+        subtitle: "Full-time",
+        desc: "Assistant Manager",
+        workdesc: [
+            "Extending Anomaly Detection for different applications and improving it's perfomance.",
+            "HR Integration with different clients using Python",
         ],
     },
 ];
