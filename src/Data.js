@@ -16,6 +16,7 @@ import {
     SiRedux,
     SiGithub,
     SiTypescript,
+    SiKubernetes,
 } from "react-icons/si";
 import { DiMysql, DiSass } from "react-icons/di";
 import { FaNode } from "react-icons/fa";
@@ -59,20 +60,20 @@ export const resumeURL =
 
 export const Languages = [
     {
-        icon: <SiC className="icon" />,
-        name: "C",
-    },
-    {
-        icon: <SiCplusplus className="icon" />,
-        name: "C++",
-    },
-    {
         icon: <SiPython className="icon" />,
         name: "Python",
     },
     {
         icon: <SiJavascript className="icon" />,
         name: "Javascript",
+    },
+    {
+        icon: <SiC className="icon" />,
+        name: "C",
+    },
+    {
+        icon: <SiCplusplus className="icon" />,
+        name: "C++",
     },
     {
         icon: <SiTypescript className="icon" />,
@@ -121,6 +122,18 @@ export const BackendTools = [
         name: "Firebase",
     },
     {
+        icon: <SiPostman className="icon" />,
+        name: "Postman",
+    },
+    {
+        icon: <SiGit className="icon" />,
+        name: "Git",
+    },
+    {
+        icon: <SiKubernetes className="icon" />,
+        name: "Kubernetes",
+    },
+    {
         icon: <SiHeroku className="icon" />,
         name: "Heroku",
     },
@@ -131,14 +144,6 @@ export const BackendTools = [
     {
         icon: <SiMongodb className="icon" />,
         name: "MongoDB",
-    },
-    {
-        icon: <SiPostman className="icon" />,
-        name: "Postman",
-    },
-    {
-        icon: <SiGit className="icon" />,
-        name: "Git",
     },
 ];
 
