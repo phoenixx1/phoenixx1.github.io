@@ -2,7 +2,6 @@ import {
     SiCplusplus,
     SiCss3,
     SiFirebase,
-    SiHtml5,
     SiJavascript,
     SiPython,
     SiReact,
@@ -13,12 +12,12 @@ import {
     SiGit,
     SiMongodb,
     SiHeroku,
-    SiRedux,
     SiGithub,
     SiTypescript,
-    SiKubernetes,
+    SiApachekafka,
+    SiFastapi,
 } from "react-icons/si";
-import { DiMysql, DiSass } from "react-icons/di";
+import { DiPostgresql, DiSass } from "react-icons/di";
 import { FaNode } from "react-icons/fa";
 
 import { FaSchool } from "react-icons/fa";
@@ -35,9 +34,7 @@ export const MainSkills = [
     1000,
     "a Computer Engineer👨‍💻",
     1000,
-    "an Open Source Contributor",
-    1000,
-    "a ML enthusiast📖",
+    "a tech enthusiast📖",
     1000,
 ];
 
@@ -60,12 +57,16 @@ export const resumeURL =
 
 export const Languages = [
     {
-        icon: <SiPython className="icon" />,
-        name: "Python",
+        icon: <SiTypescript className="icon" />,
+        name: "Typescript",
     },
     {
         icon: <SiJavascript className="icon" />,
         name: "Javascript",
+    },
+    {
+        icon: <SiPython className="icon" />,
+        name: "Python",
     },
     {
         icon: <SiC className="icon" />,
@@ -75,21 +76,9 @@ export const Languages = [
         icon: <SiCplusplus className="icon" />,
         name: "C++",
     },
-    {
-        icon: <SiTypescript className="icon" />,
-        name: "Typescript",
-    },
 ];
 
 export const FrontendTools = [
-    {
-        icon: <SiHtml5 className="icon" />,
-        name: "HTML5",
-    },
-    {
-        icon: <SiCss3 className="icon" />,
-        name: "Css3",
-    },
     {
         icon: <SiReact className="icon" />,
         name: "ReactJS",
@@ -103,10 +92,6 @@ export const FrontendTools = [
         name: "Sass",
     },
     {
-        icon: <SiRedux className="icon" />,
-        name: "Redux",
-    },
-    {
         icon: <SiBootstrap className="icon" />,
         name: "Bootstrap",
     },
@@ -115,35 +100,39 @@ export const FrontendTools = [
 export const BackendTools = [
     {
         icon: <FaNode className="icon" />,
-        name: "Node.JS",
+        name: "NodeJS",
     },
     {
-        icon: <SiFirebase className="icon" />,
-        name: "Firebase",
+        icon: <SiFastapi className="icon" />,
+        name: "FastAPI",
     },
     {
-        icon: <SiPostman className="icon" />,
-        name: "Postman",
+        icon: <SiApachekafka className="icon" />,
+        name: "Kafka",
+    },
+    {
+        icon: <DiPostgresql className="icon" />,
+        name: "PostreSQL",
+    },
+    {
+        icon: <SiMongodb className="icon" />,
+        name: "MongoDB",
     },
     {
         icon: <SiGit className="icon" />,
         name: "Git",
     },
     {
-        icon: <SiKubernetes className="icon" />,
-        name: "Kubernetes",
+        icon: <SiPostman className="icon" />,
+        name: "Postman",
+    },
+    {
+        icon: <SiFirebase className="icon" />,
+        name: "Firebase",
     },
     {
         icon: <SiHeroku className="icon" />,
         name: "Heroku",
-    },
-    {
-        icon: <DiMysql className="icon" />,
-        name: "MySQL",
-    },
-    {
-        icon: <SiMongodb className="icon" />,
-        name: "MongoDB",
     },
 ];
 
