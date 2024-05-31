@@ -6,7 +6,7 @@ import {
     SiJavascript,
     SiPython,
     SiReact,
-    SiStyledComponents,
+    SiStyledcomponents,
     SiBootstrap,
     SiPostman,
     SiC,
@@ -24,7 +24,7 @@ import { FaNode } from "react-icons/fa";
 import { FaSchool } from "react-icons/fa";
 import { MdSchool, MdWork } from "react-icons/md";
 
-import { SiMaterialUi, SiNodeRed } from "react-icons/si";
+import { SiNodered } from "react-icons/si";
 
 // HeroSection
 
@@ -95,7 +95,7 @@ export const FrontendTools = [
         name: "ReactJS",
     },
     {
-        icon: <SiStyledComponents className="icon" />,
+        icon: <SiStyledcomponents className="icon" />,
         name: "Styled-components",
     },
     {
@@ -224,7 +224,7 @@ export const experience = [
             "Completed a frontend using ReactJS.",
         ],
     },
-     {
+    {
         id: 7,
         type: "work",
         date: "July 2021 - April 2023",
@@ -268,7 +268,7 @@ export const projects = [
         id: 1,
         title: "dev-portfolio",
         desc: "Personal dev portfolio build using ReactJS.",
-        stacks: [<SiReact />, <SiStyledComponents />, <SiGithub />],
+        stacks: [<SiReact />, <SiStyledcomponents />, <SiGithub />],
         source: "https://github.com/phoenixx1/website-clones/tree/master/amazon-clone",
         demo: "https://clone-4234e.web.app/",
     },
@@ -276,7 +276,7 @@ export const projects = [
         id: 2,
         title: "Amazon Clone",
         desc: "Clone of famous E-comm site Amazon with basic functionalities signup/login using mail and purchasing product.",
-        stacks: [<SiReact />, <SiCss3 />, <SiFirebase />, <SiMaterialUi />],
+        stacks: [<SiReact />, <SiCss3 />, <SiFirebase />],
         source: "https://github.com/phoenixx1/website-clones/tree/master/amazon-clone",
         demo: "https://clone-4234e.web.app/",
     },
@@ -284,12 +284,7 @@ export const projects = [
         id: 3,
         title: "COVID-19 Tracker",
         desc: "Case tracker for covid-19 showing active cases, deaths & recovery for whole world, with graph & map representation.",
-        stacks: [
-            <SiReact />,
-            <SiStyledComponents />,
-            <SiFirebase />,
-            <SiMaterialUi />,
-        ],
+        stacks: [<SiReact />, <SiStyledcomponents />, <SiFirebase />],
         source: "https://github.com/phoenixx1/website-clones/tree/master/covid-19-tracker",
         demo: "https://covid-19-tracker-f6549.web.app/",
     },
@@ -297,7 +292,7 @@ export const projects = [
         id: 4,
         title: "Life-Expectancy Prediction",
         desc: "Internship Project made on IBM Cloud, used Watson Studio for writing code, and Node-Red build front-end for it.",
-        stacks: [<SiPython />, <SiNodeRed />],
+        stacks: [<SiPython />, <SiNodered />],
         source: "https://github.com/phoenixx1/llSPS-INT-1684-Predicting-Life-Expectancy-using-Machine-Learning",
         demo: "https://github.com/phoenixx1/llSPS-INT-1684-Predicting-Life-Expectancy-using-Machine-Learning/blob/master/FullDemonstrationVideo.mp4",
     },
@@ -305,7 +300,7 @@ export const projects = [
         id: 5,
         title: "Disney+ Hotstar Clone",
         desc: "Disney clone, with functionality to login using Google account and showing some latest releases and it's description stored on Firestore.",
-        stacks: [<SiReact />, <SiStyledComponents />, <SiFirebase />],
+        stacks: [<SiReact />, <SiStyledcomponents />, <SiFirebase />],
         source: "https://github.com/phoenixx1/website-clones/tree/master/disney-clone",
         demo: "https://disney-clone-dca88.web.app/home",
     },
@@ -313,7 +308,7 @@ export const projects = [
         id: 6,
         title: "HTML Code Editor",
         desc: "HTML Code editor, editor build using Ace-editor having dark-mode, theme option and variable font-size for code editor.",
-        stacks: [<SiReact />, <SiStyledComponents />, <SiGithub />],
+        stacks: [<SiReact />, <SiStyledcomponents />, <SiGithub />],
         source: "https://github.com/phoenixx1/html-code-editor",
         demo: "https://phoenixx1.github.io/html-code-editor/",
     },
