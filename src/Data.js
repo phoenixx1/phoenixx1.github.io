@@ -11,7 +11,6 @@ import {
     SiC,
     SiGit,
     SiMongodb,
-    SiHeroku,
     SiGithub,
     SiTypescript,
     SiApachekafka,
@@ -129,10 +128,6 @@ export const BackendTools = [
     {
         icon: <SiFirebase className="icon" />,
         name: "Firebase",
-    },
-    {
-        icon: <SiHeroku className="icon" />,
-        name: "Heroku",
     },
 ];
 
